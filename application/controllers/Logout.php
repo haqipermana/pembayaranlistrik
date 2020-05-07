@@ -1,0 +1,17 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Logout extends CI_Controller {
+
+	public function index()
+	{
+		// Destroy Session yang aktif
+		$this->session->sess_destroy();
+		redirect('login','refresh');
+	}
+
+}
+
+/* End of file Logout.php */
+/* Location: ./application/controllers/Logout.php */
+ ?>
